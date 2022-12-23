@@ -1,19 +1,19 @@
 #include "main.h"
 /**
  * string_toupper - Capitalize string
- * @ptr: Variable holder
- * Return: Always 0
+ * @str: Variable holder
+ * Return: Always str
  */
-char *string_toupper(char *ptr)
+char *string_toupper(char *str)
 {
 	int i = 0;
 
-	while (ptr[i])
+	while (str[i])
 	{
-		if (ptr[i] >= 'a' && ptr[i] <= 'Z')
+		if (str[i] >= 'a' && str[i] <= 'Z')
 			/*convert to uppercase subtracting 32 from their ASCII value*/
-			ptr[i] -= 32;
+			str[i] -= 32;
 		i++;
 	}
-	return (ptr);
+	return (str);
 }
