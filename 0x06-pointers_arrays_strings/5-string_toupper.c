@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * string_toupper - Capitalize string
+ * string_toupper - Convert to uppercase
  * @str: Variable holder
  * Return: Always str
  */
@@ -11,7 +11,6 @@ char *string_toupper(char *str)
 	while (str[i])
 	{
 		if (str[i] >= 'a' && str[i] <= 'Z')
-			/*convert to uppercase subtracting 32 from their ASCII value*/
 			str[i] -= 32;
 		i++;
 	}
