@@ -6,13 +6,14 @@
  */
 char *string_toupper(char *ptr)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; ptr[i] != '\0'; i++)
+	while (ptr[i])
 	{
 		if (ptr[i] >= 'a' && ptr[i] <= 'Z')
 			/*convert to uppercase subtracting 32 from their ASCII value*/
-			ptr[i] = ptr[i] - 32;
+			ptr[i] -= 32;
+		i++;
 	}
 	return (ptr);
 }
