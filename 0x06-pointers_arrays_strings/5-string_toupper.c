@@ -14,5 +14,5 @@ char *string_toupper(char *ptr)
 			/*convert to uppercase subtracting 32 from their ASCII value*/
 			ptr[i] = ptr[i] - 32;
 	}
-	return (0);
+	return (ptr);
 }
