@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Print the name of the function
- * @argc: The variable that holds the number of var
- * @argv: The pointer to the varaibles used
+ * main - The function to print its name
+ * @argc: Argument count
+ * @argv: Argument vector
  * Return: Always 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
