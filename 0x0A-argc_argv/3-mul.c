@@ -8,23 +8,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int multi;
-	multi = 1;
-	
-	if (argc >= 3)
-	{
-		int i;
+	int num1, num2, multi;
 
-		for (i = 1; i < argc; i++)
-		{
-			multi *= atoi(argv[i]);
-		}
-		printf("%d\n", multi);
-	}
-	else
+	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	multi = num1 * num2;
+	printf("%d\n", multi);
 	return (0);
 }
