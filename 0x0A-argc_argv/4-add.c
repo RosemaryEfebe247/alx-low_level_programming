@@ -6,7 +6,7 @@
  * @argv: the argument vector
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int j, result, sum = 0;
 	char *ptr;
@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("0\n");
+		return (0);
 	}
 	for (j = 1; argv[j]; j++)
 	{
