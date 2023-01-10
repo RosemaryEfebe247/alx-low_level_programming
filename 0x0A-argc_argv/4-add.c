@@ -10,14 +10,14 @@ int main(int argc, char *argv[])
 {
 	int j, sum = 0;
 	char *ptr;
-	
+
 	if (argc < 2)
 	{
 		printf("0\n");
 	}
 	for (j = 1; argv[j]; j++)
 	{
-		if(atoi(argv[j]) < 0)
+		if (atoi(argv[j]) < 0)
 		{
 			continue;
 		}
@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
 			sum += atoi(argv[j]);
 		}
 	}
-	printf("sum = %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
