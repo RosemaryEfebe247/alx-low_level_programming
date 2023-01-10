@@ -18,9 +18,7 @@ int main(int argc, char *argv[])
 	for (j = 1; argv[j]; j++)
 	{
 		if (atoi(argv[j]) < 0)
-		{
 			continue;
-		}
 		strtol(argv[j], &ptr, 10);
 		if (*ptr)
 		{
