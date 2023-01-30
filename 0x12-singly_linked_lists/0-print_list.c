@@ -4,7 +4,7 @@
 /**
  * print_list - Function to print the list of a node
  * @h: The pointer to the nodes
- * Return: nodes
+ * Return: Nodes
  */
 size_t print_list(const list_t *h)
 {
@@ -18,7 +18,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("%d %s\n", h->len, h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		increase++;
 		h = h->next;
