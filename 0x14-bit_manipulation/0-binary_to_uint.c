@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * binary_to_uint - Converts from binary to decimal
  * @b: Pointer to the char characters
